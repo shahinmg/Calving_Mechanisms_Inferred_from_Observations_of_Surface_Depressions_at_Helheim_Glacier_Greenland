@@ -1,0 +1,62 @@
+first_scan,last_scan,type,timelapse first time,timelapse last time,consecutive calving timelapse first time,consecutive calving timelapse last time,camera,notes
+2015-08-03 12:02:18,2015-08-04 0:02:46,flexure,2015-08-03 21:00:00,2015-08-04 12:00:00,,,HEL_TERMINUS,
+2015-08-22 18:02:15,2015-08-23 6:02:17,flexure,,,,,,TL skips a lot here
+2016-06-12 0:02:46,2016-06-13 12:06:12,flexure,2016-06-12 12:00:00,2016-06-13 9:00:00,,,HEL_TERMINUS,maybe flexure? These are the closest best scans. covers multiple caving events
+2016-06-15 0:02:16,2016-06-17 18:02:50,flexure,2016-06-14 15:00:00,2016-06-17 15:00:00,,,HEL_TERMINUS,
+2016-06-17 18:02:50,2016-06-18 18:02:49,non-flexure,2016-06-17 18:00:00,2016-06-18 15:00:00,,,HEL_TERMINUS,very small south margin
+2016-06-23 6:07:20,2016-06-24 12:02:09,flexure,2016-06-23 6:00:00,2016-06-24 12:00:00,,,HEL_TERMINUS,
+2016-07-11 0:02:17,2016-07-11 18:02:22,flexure,2016-07-11 0:00:00,2016-07-11 18:00:00,,,HEL_TERMINUS,
+2016-07-24 18:02:15,2016-07-25 0:02:30,non-flexure,2016-07-24 18:00:00,2016-07-25 6:00:00,,,HEL_TERMINUS,
+2016-07-27 12:02:16,2016-07-27 18:02:26,flexure,2016-07-27 9:00:00,2016-07-27 21:00:00,,,HEL_TERMINUS,
+2016-08-26 18:02:02,2016-08-27 0:02:15,non-flexure,2016-08-26 18:00:00,2016-08-26 21:00:00,,,HELDUAL_Stardot1,south margin
+2016-09-03 18:02:02,2016-09-04 6:02:09,non-flexure,2016-09-03 18:00:00,2016-09-03 21:00:00,2016-09-03 21:00:00,2016-09-04 9:00:00,HELDUAL_Stardot1,9/4/2016 00:02:04 is the closest scan. Time lapse shows two consecutive calving events. Second timelapse event between 2016-09-03 21:00:00 and 2016-09-04 09:00:00
+2016-09-08 6:02:01,2016-09-08 12:02:03,flexure,2016-09-07 21:00:00,2016-09-08 9:00:00,2016-09-08 9:00:00,2016-09-08 12:00:00,HELDUAL_Stardot1,
+2016-09-13 12:02:05,2016-09-13 18:02:13,non-flexure,2016-09-13 12:00:00,2016-09-13 15:00:00,,,HELDUAL_Stardot1,
+2016-09-16 6:02:05,2016-09-17 12:02:05,non-flexure,2016-09-16 12:00:00,2016-09-17 9:00:00,,,HELDUAL_Stardot2,small south margin calving event. scans are not that good
+2017-08-01 0:02:09,2017-08-01 6:02:03,flexure,2017-08-01 0:00:00,2017-08-01 3:00:00,2017-08-01 3:00:00,2017-08-01 6:00:00,HELDUAL_Stardot2,first scan of 2017 on 2017-07-18 06:02:05. First cavling event near south margin
+2017-08-01 12:02:03,2017-08-01 18:02:04,non-flexure,2017-08-01 18:00:00,2017-08-01 21:00:00,,,,"hard to tell, checked with timelapse"
+2017-08-14 6:02:05,NA,NA,,,,,,scans and timelapse are bad and either don't exist
+2017-10-09 12:01:55,2017-10-10 12:08:06,flexure,2017-10-09 12:00:00,2017-10-09 15:00:00,2017-10-09 15:00:00,2017-10-09 18:00:00,HELDUAL_Stardot2,huge calving event; south margin first calves then the center calves. Two flexures
+2018-08-12 13:01:55,2018-08-12 19:01:55,flexure,2018-08-12 18:00:00,2018-08-12 21:00:00,,,HELDUAL_Stardot2,two flexures back calving; check time lapse
+2018-09-08 19:01:59,2018-09-09 1:01:59,flexure,2018-09-08 21:00:00,2018-09-09 9:00,,,HELDUAL_Stardot2,
+2018-09-30 13:03:01,2018-10-01 7:03:22,flexure ,2018-09-30 15:00:00,2018-10-01 9:00:00,,,HELDUAL_Stardot2,need to double check with tl and qgis; tl blocked by fog
+2018-10-05 1:07:26,2018-10-07 1:02:57,flexure,2018-10-05 18:00:00,2018-10-06 9:00:00,,,,"depression appears but looks grounded. Flexure is apperent in dem, hard to tell from tl; small cavling on south margin"
+2019-06-06 7:02:01,2019-06-07 1:02:03,non-flexure,2019-06-06 12:00:00,2019-06-06 15:00:00,,,,flexures are present
+2019-06-11 7:01:55,2019-06-12 1:01:59,flexure,2019-06-11 18:00:00,2019-06-11 21:00:00,2019-06-11 21:00:00,2019-06-12 0:00:00,HELDUAL_Stardot2,
+2019-06-13 19:01:50,2019-06-14 1:02:04,NA,,,,,,can't find it
+2019-06-17 21:00:00,2019-06-18 0:00:00,NA,,,,,,can't find it
+2019-06-22 7:01:55,2019-06-22 13:02:04,flexure,2019-06-22 9:00:00,2019-06-22 12:00:00,2019-06-22 12:00:00,2019-06-22 15:00:00,HELDUAL_Stardot2,bad scans
+2019-07-17 19:01:56,2019-07-18 1:02:05,NA,2019-07-17 18:00:00,2019-07-17 21:00:00,,,HELDUAL_Stardot2,Hard to tell from scan and TL. Looks like flexure style though
+2019-07-20 19:02:05,2019-07-21 1:01:54,flexure,2019-07-20 21:00:00,2019-07-21 0:00:00,,,HELDUAL_Stardot2,Hard to tell from scan and TL. Looks like flexure style though. More clear flexure than before
+2019-08-18 1:02:04,2019-08-18 7:01:57,non-flexure,2019-08-18 0:00:00,2019-08-18 6:00:00,2019-08-18 6:00:00,2019-08-18 9:00:00,HELDUAL_Stardot2,"hard to tell if flexure or not, bc of scan quality. second calving event near south margin"
+2019-09-03 19:01:56,2019-09-04 1:02:06,flexure,2019-09-03 21:00:00,2019-09-04 6:00:00,,,HELDUAL_Stardot2,need to double check where it calved back to for flexure
+2019-09-04 1:02:06,2019-09-04 7:02:00,non-flexure,,,,,,can't see in TL bc south margin is out of LOS
+2019-10-06 19:01:56,2019-10-07 1:02:07,non-flexure,2019-10-06 18:00:00,2019-10-07 9:00:00,,,HELDUAL_Stardot2,"scans are bad, can't see calving that well"
+2019-10-08 7:03:15,2019-10-08 19:01:59,flexure,2019-10-08 9:00:00,2019-10-08 12:00:00,,,HELDUAL_Stardot2,"scans are bad, can't see calving that well"
+2019-12-31 13:09:04,2020-01-02 13:36:11,flexure,,,,,,no TL
+2020-01-04 13:08:47,2020-01-08 13:41:33,NA,,,,,,"probably flexure. bad scans, No TL"
+2020-02-03 13:14:49,2020-02-07 13:06:54,non-flexure,,,,,,"tabular, No TL"
+2020-02-12 13:09:53,2020-02-13 13:10:41,non-flexure,,,,,,does not calve back to flexure No TL
+2020-02-27 13:11:23,2020-02-28 13:18:01,flexure,2020-02-27 18:00:00,2020-02-28 18:00:00,,,,
+2020-04-12 13:04:01,2020-04-14 13:21:25,flexure,2020-04-14 6:00:00,2020-04-14 9:00:00,,,HELDUAL_Stardot2,
+2020-05-15 1:01:59,2020-05-16 19:01:55,NA,2020-05-15 3:00:00,2020-05-16 6:00:00,,,HELDUAL_Stardot2,need to double check where it calved back. center calves first but is obstructed by fog
+2020-05-27 7:01:56,2020-05-27 19:01:59,flexure,2020-05-27 9:00:00,2020-05-27 12:00:00,,,HELDUAL_Stardot2,need to double check with tl and qgis
+2020-06-09 1:02:01,2020-06-09 7:01:56,flexure,2020-06-09 6:00:00,2020-06-09 18:00:00,,,HELDUAL_Stardot2,
+2020-07-01 19:01:58,2020-07-02 1:01:56,non-flexure,2020-07-01 21:00:00,2020-07-02 0:00:00,,,HELDUAL_Stardot2,small central chunk falls off
+2020-07-11 7:01:53,2020-07-11 13:01:59,non-flexure,2020-07-11 9:00:00,2020-07-11 12:00:00,,,HELDUAL_Stardot2,very small calving near south margin
+2020-07-14 7:06:30,2020-07-14 13:02:05,flexure,2020-07-14 9:00:00,2020-07-14 12:00:00,,,HELDUAL_Stardot2,
+2020-07-14 13:02:05,2020-07-14 19:01:55,flexure,2020-07-14 12:00:00,2020-07-14 15:00:00,,,HELDUAL_Stardot2,south margin calving 
+2020-09-06 7:01:57,2020-09-06 13:01:58,non-flexure,2020-09-06 21:00:00,2020-09-07 15:00:00,,,HELDUAL_Stardot2,fog blocked lots of TL photos
+2020-09-06 13:01:58,2020-09-07 19:01:52,flexure,,,,,,first scan time is not the closest scan
+2020-09-20 13:03:00,2020-09-20 19:01:55,non-flexure,2020-09-20 15:00:00,2020-09-20 18:00:00,,,HELDUAL_Stardot2,
+2020-09-29 1:05:17,2020-09-29 7:05:45,flexure,2020-09-28 21:00:00,2020-09-29 9:00:00,,,HELDUAL_Stardot2,
+2020-10-27 13:04:01,2020-10-29 13:13:08,non-flexure,,,,,,small calving north margin
+2020-11-11 13:23:11,2020-11-13 13:11:26,flexure,2020-11-11 18:00:00,2020-11-12 12:00:00,,,,calved back to two flexures
+2020-12-23 13:09:24,2020-12-27 13:07:09,flexure,NA,NA,,,,"calved back two flexures. lots for missing scans in bewteen, No TL available"
+2021-04-10 13:03:00,2021-04-11 13:02:59,flexure,2021-04-10 21:00:00,2021-04-11 6:00:00,,,,lateral rift formed and calved a tabular berg from. lateral rift may not be flexure
+2021-04-20 13:03:58,2021-04-21 13:04:03,flexure,2021-04-21 9:00:00,2021-04-21 12:00:00,2021-04-21 12:00:00,2021-04-21 15:00:00,HELDUAL_Stardot2,"first TL calving event calves to flexure, the second event calves between TL calving event and next flexure"
+2021-05-06 19:01:59,2021-05-07 13:02:10,flexure,2021-05-07 3:00:00,2021-05-07 6:00:00,,,HELDUAL_Stardot2,scans are bad in between
+2021-06-15 1:06:43,2021-06-17 19:01:53,flexure,2021-06-16 18:00:00,2021-06-16 21:00:00,,,HELDUAL_Stardot2,tabular berg? bad scans and calving events before
+2021-07-02 1:01:59,2021-07-02 7:02:49,flexure,2021-07-02 0:00:00,2021-07-02 3:00:00,,,HELDUAL_Stardot2,bad scans
+2021-07-03 7:01:59,2021-07-03 13:01:59,NA,2021-07-03 9:00:00,2021-07-03 12:00:00,,,HELDUAL_Stardot2,Can’t tell if it is a flexure event
+,,,,,,,,very sporadic scans past this point
