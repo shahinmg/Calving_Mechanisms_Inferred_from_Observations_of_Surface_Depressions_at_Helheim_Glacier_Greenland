@@ -40,6 +40,11 @@ def strain_rates(Ux, Vy, spacing, smooth=False, smooth_method = 'scipy', x_std =
     Exy = (0.5*((Ux_grad[0]/dy)+(Vy_grad[1]/dx)))
     
     
+    Exx = np.ma.masked_array(Exx, np.isnan(Exx))
+    Eyy = np.ma.masked_array(Eyy, np.isnan(Eyy))
+    Exy = np.ma.masked_array(Exy, np.isnan(Exy))
+
+    
     if smooth:
         
         if smooth_method == 'scipy':
@@ -175,19 +180,37 @@ def resistive_stress(Exx, Eyy, Exy, surf, bed, spacing, theta, n=3, B=500, BL=50
     ddyHRyy = HRyygrad[0]/(dy)
 
     # Resistance is +  
-    F_long_along = (np.cos(theta)**3)*(ddxHRxx) + ((np.cos(theta)*(np.sin(theta)**2))*ddxHRyy) + (2*(np.cos(theta)**2)*np.sin(theta)*ddxHRxy) + \
-    (((np.cos(theta)**2)*np.sin(theta))*ddyHRxx) + ((np.sin(theta)**3)*ddyHRyy) + (2*np.cos(theta)*(np.sin(theta)**2)*ddyHRxy)
+    # F_long_along = (np.cos(theta)**3)*(ddxHRxx) + ((np.cos(theta)*(np.sin(theta)**2))*ddxHRyy) + (2*(np.cos(theta)**2)*np.sin(theta)*ddxHRxy) + \
+    # (((np.cos(theta)**2)*np.sin(theta))*ddyHRxx) + ((np.sin(theta)**3)*ddyHRyy) + (2*np.cos(theta)*(np.sin(theta)**2)*ddyHRxy)
     
-    F_long_across = (-np.sin(theta)**3)*(ddxHRxx) - (((np.cos(theta)**2)*np.sin(theta))*ddxHRyy) + (2*np.cos(theta)*(np.sin(theta)**2)*ddxHRxy) + \
-    (np.cos(theta)*((np.sin(theta)**2))*ddyHRxx) + ((np.cos(theta)**3)*ddyHRyy) - (2*(np.cos(theta)**2)*np.sin(theta)*ddyHRxy)
+    # F_long_across = (-np.sin(theta)**3)*(ddxHRxx) - (((np.cos(theta)**2)*np.sin(theta))*ddxHRyy) + (2*np.cos(theta)*(np.sin(theta)**2)*ddxHRxy) + \
+    # (np.cos(theta)*((np.sin(theta)**2))*ddyHRxx) + ((np.cos(theta)**3)*ddyHRyy) - (2*(np.cos(theta)**2)*np.sin(theta)*ddyHRxy)
     
-    F_lat_along = (-(np.cos(theta)*(np.sin(theta)**2))*(ddxHRyy - ddxHRxx)) - (np.sin(theta)*((np.cos(theta)**2)-(np.sin(theta)**2))*ddxHRxy) + \
-    ((np.cos(theta)**2)*(np.sin(theta))*(ddyHRyy-ddyHRxx)) + (np.cos(theta)*((np.cos(theta)**2)-(np.sin(theta)**2))*ddyHRxy)
+    # F_lat_along = (-(np.cos(theta)*(np.sin(theta)**2))*(ddxHRyy - ddxHRxx)) - (np.sin(theta)*((np.cos(theta)**2)-(np.sin(theta)**2))*ddxHRxy) + \
+    # ((np.cos(theta)**2)*(np.sin(theta))*(ddyHRyy-ddyHRxx)) + (np.cos(theta)*((np.cos(theta)**2)-(np.sin(theta)**2))*ddyHRxy)
     
-    F_lat_across = ((np.cos(theta)**2)*np.sin(theta)*(ddxHRyy - ddxHRxx)) + (np.cos(theta)*((np.cos(theta)**2)-(np.sin(theta)**2))*ddxHRxy) + \
-    (np.cos(theta)*(np.sin(theta)**2)*(ddyHRyy-ddyHRxx)) + (np.sin(theta)*((np.cos(theta)**2)-(np.sin(theta)**2))*ddyHRxy)
+    # F_lat_across = ((np.cos(theta)**2)*np.sin(theta)*(ddxHRyy - ddxHRxx)) + (np.cos(theta)*((np.cos(theta)**2)-(np.sin(theta)**2))*ddxHRxy) + \
+    # (np.cos(theta)*(np.sin(theta)**2)*(ddyHRyy-ddyHRxx)) + (np.sin(theta)*((np.cos(theta)**2)-(np.sin(theta)**2))*ddyHRxy)
     
+    F_long_along = (np.cos(theta)**3)*(ddxHRxx) + (((np.sin(theta)**2)*np.cos(theta))*ddxHRyy) \
+    + (2*np.sin(theta)*(np.cos(theta)**2)*ddxHRxy) + (((np.cos(theta)**2)*np.sin(theta))*ddyHRxx) \
+    + ((np.sin(theta)**3)*ddyHRyy) + (2*np.cos(theta)*(np.sin(theta)**2)*ddyHRxy)
     
+    F_long_across = (-np.sin(theta)**3)*(ddxHRxx) - (((np.cos(theta)**2)*np.sin(theta))*ddxHRyy) \
+    + (2*np.cos(theta)*(np.sin(theta)**2)*ddxHRxy) + (np.cos(theta)*((np.sin(theta)**2))*ddyHRxx) \
+    + ((np.cos(theta)**3)*ddyHRyy) - (2*(np.cos(theta)**2)*np.sin(theta)*ddyHRxy)
+    
+    F_lat_along = (-(np.cos(theta)*(np.sin(theta)**2))*(ddxHRyy - ddxHRxx)) - \
+    (np.sin(theta)*((np.cos(theta)**2)-(np.sin(theta)**2))*ddxHRxy) + \
+    ((np.cos(theta)**2)*(np.sin(theta))*(ddyHRyy-ddyHRxx)) + \
+    (np.cos(theta)*((np.cos(theta)**2)-(np.sin(theta)**2))*ddyHRxy)
+    
+    F_lat_across = ((np.cos(theta)**2)*np.sin(theta)*(ddxHRyy - ddxHRxx)) + \
+    (np.cos(theta)*((np.cos(theta)**2)-(np.sin(theta)**2))*ddxHRxy) + \
+    (np.cos(theta)*(np.sin(theta)**2)*(ddyHRyy-ddyHRxx)) + \
+    (np.sin(theta)*((np.cos(theta)**2)-(np.sin(theta)**2))*ddyHRxy)
+    
+
     
     if smooth:
         
@@ -213,7 +236,7 @@ def resistive_stress(Exx, Eyy, Exy, surf, bed, spacing, theta, n=3, B=500, BL=50
 
     slope = np.gradient(surf)
     slope_x = slope[1]/dx
-    slope_y = slope[1]/dy
+    slope_y = slope[0]/dy
     slope_along = (slope_x*np.cos(theta)) + (slope_y*(np.sin(theta)))
     slope_across = (slope_y*np.cos(theta)) - (slope_x*(np.sin(theta)))
     
