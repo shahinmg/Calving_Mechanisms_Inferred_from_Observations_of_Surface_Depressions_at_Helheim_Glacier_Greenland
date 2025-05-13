@@ -16,6 +16,10 @@ The Autonomous Terrestrial Laser Scanner (ATLAS) cloud optimized point clouds ar
 
 Use the [amazon web services command line interface](https://aws.amazon.com/cli/). 
 
+```
+conda install -c conda-forge awscli
+```
+
 To list the atlas directory
 
 ```
