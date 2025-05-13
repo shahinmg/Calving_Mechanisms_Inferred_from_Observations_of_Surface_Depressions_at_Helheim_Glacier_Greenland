@@ -19,13 +19,13 @@ Use the [amazon web services command line interface](https://aws.amazon.com/cli/
 To list the atlas directory
 
 ```
-aws s3 ls s3://grid-public-ept/atlas/
+aws s3 ls --no-sign-request s3://atlas-lidar-helheim/
 ```
 
 To copy a file to your local machine 
 
 
 ```
-aws s3 cp s3://grid-public-ept/atlas/dem/ATLAS-North/191215_121054_idw_geoid_rm.cog.tif . 
+aws s3 cp --no-sign-request s3://atlas-lidar-helheim/dem/ATLAS-North/191215_121054_idw_geoid_rm.cog.tif . 
 ```
 
