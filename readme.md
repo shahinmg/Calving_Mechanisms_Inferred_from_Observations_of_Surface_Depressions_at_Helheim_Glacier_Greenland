@@ -33,3 +33,10 @@ To copy a file to your local machine
 aws s3 cp --no-sign-request s3://atlas-lidar-helheim/dem/ATLAS-North/191215_121054_idw_geoid_rm.cog.tif . 
 ```
 
+### View a point cloud in a browser
+
+Point clouds can also be viewed in a browser. For example, an ATLAS North point cloud from 2023-10-15 00:00:14 can be viewed from the link below
+ 
+[https://viewer.copc.io/?copc=https://atlas-lidar-helheim.s3.amazonaws.com/copc/north/231015_000414.copc.laz](https://viewer.copc.io/?copc=https://atlas-lidar-helheim.s3.amazonaws.com/copc/north/231015_000414.copc.laz)
+ 
+All point clouds in s3://atlas-lidar-helheim/ can be viewed that way by changing the URL text at the end to the point cloud path of interest.
