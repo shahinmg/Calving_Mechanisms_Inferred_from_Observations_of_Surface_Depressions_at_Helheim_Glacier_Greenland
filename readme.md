@@ -39,4 +39,4 @@ Point clouds can also be viewed in a browser. For example, an ATLAS North point 
  
 [https://viewer.copc.io/?copc=https://atlas-lidar-helheim.s3.amazonaws.com/copc/north/231015_000414.copc.laz](https://viewer.copc.io/?copc=https://atlas-lidar-helheim.s3.amazonaws.com/copc/north/231015_000414.copc.laz)
  
-All point clouds in s3://atlas-lidar-helheim/ can be viewed that way by changing the URL text at the end to the point cloud path of interest.
+All point clouds in `s3://atlas-lidar-helheim/` can be viewed that way by changing the URL text at the end to the point cloud path of interest.
